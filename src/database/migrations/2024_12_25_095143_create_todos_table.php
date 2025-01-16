@@ -11,7 +11,7 @@ class CreateTodosTable extends Migration
      *
      * @return void
      */
-    
+
     public function up()
     {
         Schema::create('todos', function (Blueprint $table) {
@@ -21,13 +21,4 @@ class CreateTodosTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('todos');
-    }
 }
