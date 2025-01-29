@@ -1,0 +1,17 @@
+@extends('layouts.base') 
+@section('content')
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <p class="text-left">
+      <a class="btn btn-success" href="{{ route('todo.create') }}">ToDoを追加</a>
+    </p>
+    <div class="card">
+      <div class="card-header">
+        ToDo一覧
+      </div>
+      <div class="list-group list-group-flush">
+      </div>
+    </div>
+  </div>
+</div>
+@endsection
